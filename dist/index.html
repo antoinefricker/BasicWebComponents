@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <title>Basic WebComponent</title>
+    <script src="./web-components/GeoblockingIcon.js" defer></script>
+    <script>
+      function selectHandler(event) {
+        const area = event.target.value;
+        const geoblockingIcon = document.getElementById('area1');
+
+        geoblockingIcon.setAttribute('area', area);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Basic WebComponents example</h1>
+    <select name="area-selector" onChange="selectHandler(event)">
+      <option value="ALL">ALL</option>
+      <option value="SAT">SAT</option>
+      <option value="DE_FR">DE_FR</option>
+    </select>
+    <br />
+    <br />
+    <geoblocking-icon id="area1" area="ALL"></geoblocking-icon>
+  </body>
+</html>
