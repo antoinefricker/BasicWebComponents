@@ -7,9 +7,11 @@
       <script src="/bundle.js" defer></script>
    </head>
    <body>
-      <h1><img src="assets/favicon-32x32.png" />Basic WebComponents example test</h1>
-      <br />
-      <geoblocking-select target="geoblockingAreaIcon"></geoblocking-select>
-      <geoblocking-icon id="geoblockingAreaIcon" geoblockingArea="ALL"></geoblocking-icon>
+      <h1>Basic WebComponents example</h1>
+      <theme-wrapper>
+         <geoblocking-select target="geoblockingAreaIcon" name="geoblockingSelector"></geoblocking-select>
+         <br />
+         <geoblocking-icon id="geoblockingAreaIcon" geoblockingArea="ALL"></geoblocking-icon>
+      </theme-wrapper>
    </body>
 </html>
