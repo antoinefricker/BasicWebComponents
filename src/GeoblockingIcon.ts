@@ -24,7 +24,7 @@ template.innerHTML = `
               <path d="M20 6V4a2 2 0 1 0-4 0v2"/>
               <rect width="8" height="5" x="14" y="6" rx="1"/>
           </svg>
-          <div class="GeoblockingIcon-label">Test</div>
+          <div class="GeoblockingIcon-label"></div>
       </div> 
   `;
 

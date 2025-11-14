@@ -36,5 +36,7 @@ yarn build
 
 ## Roadmap
 
+- [custom slots](https://developer.mozilla.org/en-US/docs/Web/API/Element/slot)
+- [state](https://developer.mozilla.org/en-US/docs/Web/API/CustomStateSet)
 - Explore [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)
 - Implement JSX support with [webjsx](https://webjsx.org/)

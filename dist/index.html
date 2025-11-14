@@ -1,15 +1,38 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
-      <title>Basic WebComponent</title>
-      <script src="/bundle.js" defer></script>
-   </head>
-   <body>
-      <h1><img src="assets/favicon-32x32.png" />Basic WebComponents example test</h1>
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <title>Basic WebComponent</title>
+    <script src="/bundle.js" defer></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Basic WebComponents example</h1>
+
+    <theme-wrapper>
+      <geoblocking-select target="geoblockingAreaIcon" name="geoblockingSelector"></geoblocking-select>
       <br />
-      <geoblocking-select target="geoblockingAreaIcon"></geoblocking-select>
       <geoblocking-icon id="geoblockingAreaIcon" geoblockingArea="ALL"></geoblocking-icon>
-   </body>
+    </theme-wrapper>
+
+    <hr />
+
+    <theme-wrapper>
+      <geoblocking-select target="geoblockingAreaIcon" name="geoblockingSelector"></geoblocking-select>
+      <br />
+      <geoblocking-icon id="geoblockingAreaIcon" geoblockingArea="ALL"></geoblocking-icon>
+    </theme-wrapper>
+
+    <hr />
+
+    <custom-card>
+      <span slot="title">This is the title</span>
+      <span slot="content">This is the content</span>
+      <span slot="footer">
+        <button>Click me</button>
+        <button onClick="dontClick">Don't click me</button>
+      </span>
+    </custom-card>
+  </body>
 </html>

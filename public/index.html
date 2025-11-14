@@ -1,17 +1,41 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
-      <title>Basic WebComponent</title>
-      <script src="/bundle.js" defer></script>
-   </head>
-   <body>
-      <h1>Basic WebComponents example</h1>
-      <theme-wrapper>
-         <geoblocking-select target="geoblockingAreaIcon" name="geoblockingSelector"></geoblocking-select>
-         <br />
-         <geoblocking-icon id="geoblockingAreaIcon" geoblockingArea="ALL"></geoblocking-icon>
-      </theme-wrapper>
-   </body>
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <title>Basic WebComponent</title>
+    <script src="/bundle.js" defer></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Basic WebComponents example</h1>
+
+    <h2>Properties</h2>
+
+    <geoblocking-select target="geoblockingAreaIcon" name="geoblockingSelector"></geoblocking-select>
+    <br />
+    <geoblocking-icon id="geoblockingAreaIcon" geoblocking-area="ALL"></geoblocking-icon>
+
+    <hr />
+
+    <h2>Styling</h2>
+
+    <theme-wrapper>
+      <geoblocking-icon id="geoblockingAreaIcon" geoblocking-area="EUR_UK"></geoblocking-icon>
+    </theme-wrapper>
+
+    <hr />
+
+    <h2>Slots</h2>
+    <p>See <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/slot">MDN documentation</a></p>
+
+    <custom-card>
+      <span slot="title">This is the title</span>
+      <span slot="content">This is the content</span>
+      <span slot="footer">
+        <button onclick="window.click()">Click me</button>
+        <button onclick="window.dontClick()" style="cursor: not-allowed">Don't click me</button>
+      </span>
+    </custom-card>
+  </body>
 </html>
